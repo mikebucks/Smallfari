@@ -1,0 +1,10 @@
+/* Globals */
+html { -webkit-transition: width 400ms linear; }
+
+/* Window */
+#mblzr_viewport { position: fixed !important; top: 0; left: 50%; }
+
+/* Controls */
+#mblzr_controls { position: fixed; top: 1px; left: 1px; margin: 0; padding: 0; }
+#mblzr_controls a { display: block; margin: 0 0 1px 0 !important; padding: 8px 5px !important; background: rgba(120,120,120,.3) !important; font-size: 12px !important; color: rgba(255,255,255,.5) !important; -webkit-transition: background 100ms linear; text-shadow: none !important; }
+#mblzr_controls a:hover { background: rgba(120,120,120,.6) !important; color: rgba(255,255,255,.8) !important; }
