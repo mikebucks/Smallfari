@@ -7,7 +7,6 @@ var SML = SML || {};
 		rootNode: document.documentElement,
 		structure: document.body.childNodes,
 
-		//Parse messages from global.html
 		handleMessage: function(msgEvent) {
 			var messageName = msgEvent.name;
 			if (messageName === 'mobilize') {
@@ -16,24 +15,11 @@ var SML = SML || {};
 			}
 		},
 
-		//Scale rootNode to 320 x 480	& reset structural elements
 		resize: function() {
-
 			m.rootNode.style.width = m.deviceWidth + 'px';
 			m.rootNode.style.margin = '0 auto';
-	
-			for(i = 0; i < m.structure.length; i++) {
-//				var nodes[i] = m.structure[i];
-//				alert(nodes[i]);
-
-				//nodes[i].style.width = 'auto';
-				//nodes[i].style.border = 'solid 1px red';
-
-			}
-
 		},
 
-		//Insert viewport guide
 		addViewport: function() {	
 			var matte = document.createElement('div');
 			matte.setAttribute('id', 'mblzr_viewport');
@@ -43,19 +29,11 @@ var SML = SML || {};
 
 			document.getElementsByTagName('body')[0].appendChild(matte);
 		}
-
 	}
 
-//Listen for messages from global.html
-safari.self.addEventListener('message', m.handleMessage, true);
-	
-	
-	
-//SML.Global();
 
-
-
-//Insert menu items
+// TODO 
+// Insert menu items
 /*
 function addControls() {
 	var controlsHTML = '';
