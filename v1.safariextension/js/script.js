@@ -1,6 +1,6 @@
 var SML = SML || {};
 
-	var m = {
+	var SML.m = {
 
 		deviceWidth: 320,
 		deviceHeight: 480,
@@ -10,22 +10,22 @@ var SML = SML || {};
 		handleMessage: function(msgEvent) {
 			var messageName = msgEvent.name;
 			if (messageName === 'mobilize') {
-				m.resize();
-				m.addViewport();
+				SML.m.resize();
+				SML.m.addViewport();
 			}
 		},
 
 		resize: function() {
-			m.rootNode.style.width = m.deviceWidth + 'px';
-			m.rootNode.style.margin = '0 auto';
+			SML.m.rootNode.style.width = SML.m.deviceWidth + 'px';
+			SML.m.rootNode.style.margin = '0 auto';
 		},
 
 		addViewport: function() {	
 			var matte = document.createElement('div');
 			matte.setAttribute('id', 'mblzr_viewport');
-			matte.style.width = m.deviceWidth + 'px';
-			matte.style.top = m.deviceHeight + 'px';
-			matte.style.marginLeft = '-' + (m.deviceWidth / 2) + 'px';
+			matte.style.width = SML.m.deviceWidth + 'px';
+			matte.style.top = SML.m.deviceHeight + 'px';
+			matte.style.marginLeft = '-' + (SML.m.deviceWidth / 2) + 'px';
 
 			document.getElementsByTagName('body')[0].appendChild(matte);
 		}
