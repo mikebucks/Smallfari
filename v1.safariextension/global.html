@@ -1,24 +1,10 @@
 <!doctype html>
 <script type="text/javascript">
-
 //Turning on extension dispatches "command"
-safari.application.addEventListener("command", init, false);
+safari.application.addEventListener('command', init, false);
 
 //init sends message to script.js
 function init() {
 	safari.application.activeBrowserWindow.activeTab.page.dispatchMessage('mobilize');
 }
-
-//Injected script respondes with function calls
-//safari.application.activeBrowserWindow.activeTab.addEventListener("message", handleMessage, true);
-
-//parse messages coming back from script.js
-/*
-function handleMessage(msgEvent) {
-	var messageName = msgEvent.name;	
-	if (messageName === 'addControls') {
-		addControls();
-	}
-}
-*/
 </script>

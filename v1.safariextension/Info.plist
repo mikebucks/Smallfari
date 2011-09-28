@@ -4,6 +4,8 @@
 <dict>
 	<key>Author</key>
 	<string>Mike Bucks</string>
+	<key>Builder Version</key>
+	<string>7534.48.3</string>
 	<key>CFBundleDisplayName</key>
 	<string>Smallfari</string>
 	<key>CFBundleIdentifier</key>
@@ -53,7 +55,7 @@
 		</array>
 	</dict>
 	<key>Description</key>
-	<string>Preview your mobile web sites in desktop browsers.</string>
+	<string>Preview mobile web sites in desktop browsers.</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
